@@ -123,7 +123,11 @@ end
 
 def organize_schools(a)
   
+<<<<<<< HEAD
   newList = {"Chicago" => []}
+=======
+  newList = {}
+>>>>>>> f363ff7ccb5552316824078b7164e6ce1f982d4d
   
   a.each do |itemA, valA|
     if newList.has_key? valA[:location]
@@ -133,11 +137,15 @@ def organize_schools(a)
   end
   
   newList.each do |itemA,valA|
+<<<<<<< HEAD
     a.each do |itemB,valB|
       if itemA == valB[:location]
         valA << itemB
       end
     end
+=======
+    
+>>>>>>> f363ff7ccb5552316824078b7164e6ce1f982d4d
   end
   
   return newList
